@@ -28,7 +28,7 @@ https://www.periscope.tv/w/1eaJbYnkopeGX
 
 - [PHP](#php)
 - [KOTLIN](#kotlin)
-- [C++](#c++)
+- [C++](#c)
 - [swift](#swift)
 - [Python](#python)
 - [JavaScript](#javascript)
@@ -48,7 +48,7 @@ https://www.periscope.tv/w/1eaJbYnkopeGX
 ---
 
 ## php
-```
+```php
 <?php
 $date = date("Y/m/d");
 
@@ -62,8 +62,34 @@ if ($date == "2017/06/25"){
 ```
 
 ## c++
-```
+```cpp
+#include <iostream>
+#include <ctime>
+using namespace std;
 
+void checkEidDay(string eidDate,string todayDate);
+
+int main(int argc, char *argv[]) {
+    char localDateStr[50];
+    time_t current = time(0); // if you wanna Eid day put current as 1498338323;
+    tm *localDate = localtime(&current);
+    string eidDate = "2017/06/25";
+    strftime(localDateStr,50,"%Y/%m/%d",localDate);
+    checkEidDay(eidDate,localDateStr);
+    return 0;
+// Mazen Hrazi (Twitter @iMaz1n)
+}
+
+void checkEidDay(string eidDate,string todayDate){
+    if (eidDate == todayDate){
+        printf("Happy Eid from iZONA 🥰.");
+    }
+    else {
+        printf("Ohh 😢 There is no Eid 😞.");
+    }
+}
+```
+```cpp
 #include <iostream>
 #include <Ramadan>
 using namespace std;
@@ -74,9 +100,8 @@ int main()
     cout<< " Do not miss to fast 6 day in Shawal"; 
     return 0;
 }
-
 ```
-```
+```cpp
 #include <iostream>
 
 using namespace std;
@@ -97,7 +122,7 @@ int main() {
 ```
 
 ## kotlin
-```
+```kotlin
 package Eid
 
 fun main(args: Array<string>) {
@@ -106,7 +131,7 @@ fun main(args: Array<string>) {
 ```
 
 ## swift
-```
+```swift
 var data = "2017/6/25"
  
  if data == "2017/6/25"
@@ -123,7 +148,7 @@ var data = "2017/6/25"
 ```
 
 ## java
-```
+```java
 Scanner enter=new Scanner(System.in);
 System.out.println(" Enter today's date : ");
 String date=enter.next();
@@ -142,10 +167,10 @@ String date=enter.next();
 ```
 
 ## python
-```
+```python
 print (" كل عام و انتم بخير ")
 ```
-```
+```python
 Open in CMD 
 ^^
 
@@ -165,9 +190,7 @@ else:
 ```
 
 New Python Code
-```
-
-
+```python
 #Fahad Alsubaie @FahadMIT
 import time
 import os
@@ -188,7 +211,7 @@ else:
 
 
 ## javascript
-```
+```javascript
     <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
     <body>
         <h1>Reverse</h1>
@@ -212,8 +235,7 @@ else:
 ```
 
 ## ruby
-```
-
+```ruby
 #!/usr/bin/ruby -w
 
 puts " Happy Eid :) ";
@@ -222,7 +244,7 @@ puts " Happy Eid :) ";
 ```
 
 ## nmap
-```
+```shell
 Yasers-MacBook-Pro:~ yaser$ nmap -sS -sV -O sun.25.06.2017
 Starting Nmap 5.00 ( http://nmap.org ) at 2017-06-25 07:30 SA
 Interesting ports on sun.25.06.2017:
@@ -238,7 +260,7 @@ Nmap done: 1 IP address (1 host up) scanned in 0.51 seconds
 ```
 
 ## SQL
-```
+```SQL
 -- phpMyAdmin SQL Dump
 -- version 4.5.1
 -- http://www.phpmyadmin.net
@@ -268,5 +290,4 @@ VALUES
 'Eid Mubarak - عيد مبارك');
 
 // @Muneera_Salah
-
 ```
