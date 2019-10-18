@@ -63,7 +63,6 @@ if ($date == "2017/06/25"){
 
 ## c++
 ```
-
 #include <iostream>
 #include <Ramadan>
 using namespace std;
