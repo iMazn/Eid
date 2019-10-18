@@ -74,7 +74,6 @@ int main()
     cout<< " Do not miss to fast 6 day in Shawal"; 
     return 0;
 }
-
 ```
 ```
 #include <iostream>
