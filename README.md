@@ -62,6 +62,33 @@ if ($date == "2017/06/25"){
 ```
 
 ## c++
+<pre>
+#include <iostream>
+#include <ctime>
+using namespace std;
+
+void checkEidDay(string eidDate,string todayDate);
+
+int main(int argc, char *argv[]) {
+    char localDateStr[50];
+    time_t current = time(0); // if you wanna Eid day put current as 1498338323;
+    tm *localDate = localtime(&current);
+    string eidDate = "2017/06/25";
+    strftime(localDateStr,50,"%Y/%m/%d",localDate);
+    checkEidDay(eidDate,localDateStr);
+    return 0;
+// Mazen Hrazi (Twitter @iMaz1n)
+}
+
+void checkEidDay(string eidDate,string todayDate){
+    if (eidDate == todayDate){
+        printf("Happy Mubarak from iZONA 🥰.");
+    }
+    else {
+        printf("Ohh 😢 There is no Eid 😞.");
+    }
+}
+</pre>
 ```
 #include <iostream>
 #include <Ramadan>
