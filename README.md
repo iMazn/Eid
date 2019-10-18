@@ -62,7 +62,7 @@ if ($date == "2017/06/25"){
 ```
 
 ## c++
-<pre>
+```
 #include <iostream>
 #include <ctime>
 using namespace std;
@@ -88,7 +88,7 @@ void checkEidDay(string eidDate,string todayDate){
         printf("Ohh 😢 There is no Eid 😞.");
     }
 }
-</pre>
+```
 ```
 #include <iostream>
 #include <Ramadan>
