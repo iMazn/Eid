@@ -82,7 +82,7 @@ int main(int argc, char *argv[]) {
 
 void checkEidDay(string eidDate,string todayDate){
     if (eidDate == todayDate){
-        printf("Happy Mubarak from iZONA 🥰.");
+        printf("Happy Eid from iZONA 🥰.");
     }
     else {
         printf("Ohh 😢 There is no Eid 😞.");
