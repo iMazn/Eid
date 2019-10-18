@@ -266,5 +266,4 @@ VALUES
 'Eid Mubarak - عيد مبارك');
 
 // @Muneera_Salah
-
 ```
