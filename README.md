@@ -28,7 +28,7 @@ https://www.periscope.tv/w/1eaJbYnkopeGX
 
 - [PHP](#php)
 - [KOTLIN](#kotlin)
-- [C++](#c++)
+- [C++](#c)
 - [swift](#swift)
 - [Python](#python)
 - [JavaScript](#javascript)
